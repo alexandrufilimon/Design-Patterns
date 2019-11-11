@@ -31,5 +31,11 @@ public class Paragraph implements Element {
 	public void setAlignStrategy(AlignStrategy obj){
 		this.strategy = obj;
 	}
+
+	@Override
+	public void accept(Visitor visitor) {
+		// TODO Auto-generated method stub
+		visitor.visit(this);
+	}
 	
 }

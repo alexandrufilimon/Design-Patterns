@@ -29,6 +29,12 @@ public class Section implements Element {
 			x.print();		
 		}
 	}
+
+	public void accept(Visitor visitor) {
+		for(Element x : content){
+			x.accept(visitor);
+		}
+	}
 	
 //	public String toString() {
 //		StringBuilder sb = new StringBuilder();

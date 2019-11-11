@@ -14,4 +14,10 @@ public class Table implements Element {
 	public String toString() {
 		return "Table with Title: " + nume;
 	}
+
+	@Override
+	public void accept(Visitor visitor) {
+		// TODO Auto-generated method stub
+		visitor.visit(this);
+	}
 }

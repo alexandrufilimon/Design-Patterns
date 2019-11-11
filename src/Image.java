@@ -18,5 +18,11 @@ public class Image implements Element {
 	public void print() {
 		System.out.println("Image with name: " + nume);
 	}
+
+	@Override
+	public void accept(Visitor visitor) {
+		// TODO Auto-generated method stub
+		visitor.visit(this);
+	}
 	
 }

@@ -19,6 +19,13 @@ public class ImageProxy implements Element {
 	public String toString(){
 		return this.imageName;
 	}
+
+
+	@Override
+	public void accept(Visitor visitor) {
+		// TODO Auto-generated method stub
+		visitor.visit(this);
+	}
 	
 	
 	
