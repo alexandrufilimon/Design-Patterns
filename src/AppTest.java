@@ -101,6 +101,10 @@ public class AppTest {
 		BookStatistics stats = new BookStatistics();
 		cap1.accept(stats);
 		stats.printStatistics();
+		
+		BookFinancial financial = new BookFinancial();
+		cap1.accept(financial);
+		financial.printFinancial();
 	}
 
 }

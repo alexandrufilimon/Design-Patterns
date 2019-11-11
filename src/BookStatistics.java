@@ -1,8 +1,8 @@
 
 public class BookStatistics implements Visitor {
-	private int imgCounter;
-	private int paraCounter;
-	private int tableCounter;
+	protected static int imgCounter;
+	protected static int paraCounter;
+	protected static int tableCounter;
 
 	@Override
 	public void visit(Image image) {
@@ -31,5 +31,6 @@ public class BookStatistics implements Visitor {
 		System.out.println("*** Number of tables: " + tableCounter);
 		System.out.println("*** Number of paragraphes: " + paraCounter);
 	}
+	
 	
 }
