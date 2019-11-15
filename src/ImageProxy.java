@@ -17,7 +17,7 @@ public class ImageProxy implements Element {
 	}
 	
 	public String toString(){
-		return this.imageName;
+		return this.getClass().getName() + " " + this.imageName;
 	}
 
 

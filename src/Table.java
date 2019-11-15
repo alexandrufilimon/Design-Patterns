@@ -8,11 +8,11 @@ public class Table implements Element {
 	}
 	
 	public void print() {
-		System.out.println(toString());
+		System.out.println("Table with Title: " + nume);
 	}
 	
 	public String toString() {
-		return "Table with Title: " + nume;
+		return this.nume;
 	}
 
 	@Override

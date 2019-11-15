@@ -25,7 +25,7 @@ public class Paragraph implements Element {
 	}
 	
 	public String toString() {
-		return "Paragraph: " + nume;
+		return this.getClass().getName() + " " + nume;
 	}
 	
 	public void setAlignStrategy(AlignStrategy obj){

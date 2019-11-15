@@ -105,6 +105,11 @@ public class AppTest {
 		BookFinancial financial = new BookFinancial();
 		cap1.accept(financial);
 		financial.printFinancial();
+		
+		BookSave save = new BookSave();
+		cap1.accept(save);
+		save.saveBook();
+		save.readBook();
 	}
 
 }

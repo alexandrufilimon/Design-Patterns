@@ -18,6 +18,10 @@ public class Image implements Element {
 	public void print() {
 		System.out.println("Image with name: " + nume);
 	}
+	
+	public String toString(){
+		return this.getClass().getName() + " " + this.nume;
+	}
 
 	@Override
 	public void accept(Visitor visitor) {
