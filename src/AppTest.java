@@ -85,31 +85,42 @@ public class AppTest {
 //		System.out.println();
 //		cap1.print();
 
-		Section cap1 = new Section("Capitolul 1");
-		Paragraph p1 = new Paragraph("Paragraph 1");
-		cap1.add(p1);
-		Paragraph p2 = new Paragraph("Paragraph 2");
-		cap1.add(p2);
-		Paragraph p3 = new Paragraph("Paragraph 3");
-		cap1.add(p3);
-		Paragraph p4 = new Paragraph("Paragraph 4");
-		cap1.add(p4);
-		cap1.add(new ImageProxy("ImageOne"));
-		cap1.add(new Image("ImageTwo"));
-		cap1.add(new Paragraph("Some text"));
-		cap1.add(new Table("Table 1"));
-		BookStatistics stats = new BookStatistics();
-		cap1.accept(stats);
-		stats.printStatistics();
+//		Section cap1 = new Section("Capitolul 1");
+//		Paragraph p1 = new Paragraph("Paragraph 1");
+//		cap1.add(p1);
+//		Paragraph p2 = new Paragraph("Paragraph 2");
+//		cap1.add(p2);
+//		Paragraph p3 = new Paragraph("Paragraph 3");
+//		cap1.add(p3);
+//		Paragraph p4 = new Paragraph("Paragraph 4");
+//		cap1.add(p4);
+//		cap1.add(new ImageProxy("ImageOne"));
+//		cap1.add(new Image("ImageTwo"));
+//		cap1.add(new Paragraph("Some text"));
+//		cap1.add(new Table("Table 1"));
+//		BookStatistics stats = new BookStatistics();
+//		cap1.accept(stats);
+//		stats.printStatistics();
+//		
+//		BookFinancial financial = new BookFinancial();
+//		cap1.accept(financial);
+//		financial.printFinancial();
+//		
+//		BookSave save = new BookSave();
+//		cap1.accept(save);
+//		save.saveBook();
+//		save.readBook();
 		
-		BookFinancial financial = new BookFinancial();
-		cap1.accept(financial);
-		financial.printFinancial();
-		
-		BookSave save = new BookSave();
-		cap1.accept(save);
-		save.saveBook();
-		save.readBook();
+//		Builder jsonBuilder = new JSONBuilder("book.json");
+//		jsonBuilder.build();
+//		Element myBook = jsonBuilder.getResult();
+//		myBook.print();
+//		
+		System.out.println("-------------------------");
+		Builder xmlBuilder = new XMLBuilder("book.xml");
+		xmlBuilder.build();
+//		Element myBook1 = xmlBuilder.getResult();
+//		myBook1.print();
 	}
 
 }

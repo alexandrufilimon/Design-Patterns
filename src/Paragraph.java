@@ -20,6 +20,8 @@ public class Paragraph implements Element {
 		if(this.strategy != null){
 			this.strategy.print(nume);
 			System.out.println();
+		}else {
+			System.out.println("Paragraph with name: " + this.nume);
 		}
 		
 	}
