@@ -116,11 +116,13 @@ public class AppTest {
 //		Element myBook = jsonBuilder.getResult();
 //		myBook.print();
 //		
-		System.out.println("-------------------------");
-		Builder xmlBuilder = new XMLBuilder("book.xml");
-		xmlBuilder.build();
-//		Element myBook1 = xmlBuilder.getResult();
-//		myBook1.print();
+		Command cmd1 = new OpenCommand("book.json");
+		cmd1.execute();
+		Command cmd2 = new StatisticsCommand();
+		cmd2.execute();
+		DocumentManager.getBook().print();
+		
+
 	}
 
 }
