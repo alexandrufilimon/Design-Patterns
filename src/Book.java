@@ -13,6 +13,9 @@ public class Book {
 		this.nume = nume;
 	}
 	
+	public List<Element> getContent(){
+		return this.content;
+	}
 	
 	public void addAutor(Author e) {
 		autori.add(e);

@@ -11,7 +11,11 @@ public class OpenCommand implements Command {
 		Builder jsonBuilder = new JSONBuilder(filename);
 		jsonBuilder.build();
 		Element myBook = jsonBuilder.getResult();
-		DocumentManager.getInstance().getBook().addContent(myBook);
+		DocumentManager.getBook().addContent(myBook);
+	}
+	
+	public void unexecute() {
+		
 	}
 
 }

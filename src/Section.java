@@ -24,6 +24,11 @@ public class Section implements Element,Observable {
 	public Element getElement(int index) {
 		return content.get(index);
 	}
+	
+	public List<Element> getContent(){
+		return this.content;
+	}
+	
 
 	@Override
 	public void print() {
@@ -31,6 +36,10 @@ public class Section implements Element,Observable {
 		for(Element x : content) {
 			x.print();		
 		}
+	}
+	
+	public void removeLastElement(){
+		this.content.remove(content.size());
 	}
 
 	public void accept(Visitor visitor) {
@@ -66,15 +75,5 @@ public class Section implements Element,Observable {
 			x.update(this.oldContent, this.sectionTitle);
 		}
 	}
-	
-//	public String toString() {
-//		StringBuilder sb = new StringBuilder();
-//		sb.append(sectionTitle + "\n");
-//		for(Element x : content) {
-//			sb.append(x + "\n");
-//		}
-//		return sb.toString();
-//	}
-	
 	
 }
